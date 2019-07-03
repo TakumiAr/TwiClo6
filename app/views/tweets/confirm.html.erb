@@ -1,13 +1,11 @@
 <h3>以下の内容で、送信する。</h3>
-
 <%= form_with(model: @tweet, url: tweets_path, local: true) do |form| %>
   <%= form.hidden_field :content %>
-
-  <p>tui-to:<%= @tweet.content %></p>
-  <%= form.submit  "登録する" %>
+  <p>ツイート: <%= @tweet.content %></p>
+  <%= form.submit  "投稿する" %>
 <% end %>
 
 <%= form_with(model: @tweet, url: new_tweet_path, local: true, method: 'get') do |form| %>
   <%= form.hidden_field :content %>
-  <%= form.submit "戻る", name: 'back' %>
+  <%= form.submit  "戻る", name: 'back' %>
 <% end %>

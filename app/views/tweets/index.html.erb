@@ -1,21 +1,18 @@
-<h1>ブログ一覧</h1>
-
 <p><%= notice %></p>
-
 <table>
   <tr>
-    <th>内容</th>
+    <th>ツイート</th>
+    <th>投稿時間</th>
   </tr>
-
 <% @tweets.each do |tweet| %>
+<div class="btn-group" role="group" aria-label="...">
   <tr>
     <td><%= tweet.content %></td>
-
-     <td><%= link_to '詳細を確認する', tweet_path(tweet.id) %></td>
-     <td><%= link_to "を編集する", edit_tweet_path(tweet.id) %></td>
-     <td><%= link_to 'ブログを削除する', tweet_path(tweet.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></td>
+    <td><%= tweet.created_at %></td>
+    <td><button type="button" class="btn btn-default"><%= link_to "詳細", tweet_path(tweet.id) %></button></td>
+    <td><button type="button" class="btn btn-default"><%= link_to "編集", edit_tweet_path(tweet.id), data: { confirm: '本当に編集しますか？' } %></button></td>
+    <td><button type="button" class="btn btn-default"><%= link_to '削除', tweet_path(tweet.id), method: :delete, data: { confirm: '本当に削除しますか？' } %></button></td>
   </tr>
+</div>
 <% end %>
 </table>
-
-<%= link_to '新しくブログを投稿する', new_tweet_path %>
