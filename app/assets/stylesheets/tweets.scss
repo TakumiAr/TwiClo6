@@ -1,0 +1,92 @@
+
+
+header {
+  height: 55px;
+  background-color: #9FAAAD;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo a {
+  text-decoration: none;
+}
+.logo-btn {
+  margin-top: 12px;
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #AD3132;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-btn:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
+  background-color: #990000;
+}
+
+body li {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+table th {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #9FAAAD;
+}
+
+footer p {
+  text-align: center;
+  vertical-align: middle;
+}
+
+input[type="text"] {
+        width: 300px;
+        height: 80px;
+    }
+
+input[type=button], input[type=reset], input[type=submit] {
+  margin-top: 12px;
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #AD3132;
+  display: inline-block;
+  vertical-align: middle;
+  color: white
+}

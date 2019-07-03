@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwiClo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header>
+        <ul class="row">
+          <li class="col-sm-1 col-xs-1">
+            <span class="logo">
+              <%= link_to tweets_path do %>
+                <%= image_tag 'logob.jpg', height: "55" %>
+              <% end %></span>
+          </li>
+          <li class="col-sm-offset-9 col-sm-1 col-xs-offset-6 col-xs-3">
+            <span class="logo-btn"><%= link_to 'ツイートする', new_tweet_path %></span>
+          </li>
+        </ul>
+      </header>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 col-xs-offset-6 col-xs-offset-3">
+          <%= yield %>
+        </div>
+      </div>
+      <footer>
+        <p>運営会社DIVE INTO CODE株式会社</p><br>
+        <p>© 2015-2016 Copyright DIVE INTO CODE Corp.</p>
+      </footer>
+    </div>
+  </body>
+</html>
