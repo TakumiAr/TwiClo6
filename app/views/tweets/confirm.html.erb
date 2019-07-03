@@ -2,10 +2,10 @@
 <%= form_with(model: @tweet, url: tweets_path, local: true) do |form| %>
   <%= form.hidden_field :content %>
   <p>ツイート: <%= @tweet.content %></p>
-  <%= form.submit  "投稿する" %>
+  <p class="tweet_submit"><%= form.submit  "投稿する" %></p>
 <% end %>
 
 <%= form_with(model: @tweet, url: new_tweet_path, local: true, method: 'get') do |form| %>
   <%= form.hidden_field :content %>
-  <%= form.submit  "戻る", name: 'back' %>
+  <p class="tweet_submit"><%= form.submit  "戻る", name: 'back' %></p>
 <% end %>

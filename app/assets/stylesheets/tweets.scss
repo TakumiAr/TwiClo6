@@ -42,6 +42,14 @@ ul {
   background-color: #990000;
 }
 
+body {
+  position: relative
+}
+
+#wrap {
+  padding-bottom: 150px;
+}
+
 body li {
   list-style: none;
 }
@@ -55,8 +63,12 @@ table th {
   text-align: center;
 }
 
+.tweet_submit {
+  text-align: center;
+}
+
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: 80px;
