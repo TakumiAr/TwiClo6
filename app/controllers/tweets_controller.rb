@@ -38,7 +38,7 @@ class TweetsController < ApplicationController
 
   def destroy
     @tweet.destroy
-    redirect_to tweets_path, notice:"ツイートを削除しました！"
+    redirect_to tweets_path, notice:"ツイートを削除しました！ "
   end
 
   def confirm
