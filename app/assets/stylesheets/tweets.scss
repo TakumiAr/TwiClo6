@@ -1,5 +1,3 @@
-
-
 header {
   height: 55px;
   background-color: #9FAAAD;
@@ -42,14 +40,6 @@ ul {
   background-color: #990000;
 }
 
-body {
-  position: relative
-}
-
-#wrap {
-  padding-bottom: 150px;
-}
-
 body li {
   list-style: none;
 }
@@ -68,8 +58,8 @@ table th {
 }
 
 footer {
-  position: absolute;
   bottom: 0;
+  width: 100%;
   height: 80px;
   background-color: #9FAAAD;
 }
